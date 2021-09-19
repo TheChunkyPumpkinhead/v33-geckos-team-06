@@ -105,7 +105,74 @@ const Index = () => {
                 // </tr>
               )}
           </div>
-          <Bottom />
+
+          <div className="browse-box">
+            <h1 className="browse-title">Fresh Games</h1>
+
+            <div id="all-images">
+              {data &&
+                data.map(
+                  (dataItem) => (
+                    <ResourceCards
+                      game={dataItem.game}
+                      description={dataItem.description}
+                      author={dataItem.author}
+                    />
+                  )
+                  // <tr key={data.id}>
+                  //     <td>{data.firstName} {data.lastName}</td>
+                  //     <td>{data.email}</td>
+                  //     <td>{user.role}</td>
+                  // </tr>
+                )}
+            </div>
+
+            <div className="browse-box">
+              <h1 className="browse-title">Featured Jams</h1>
+
+              <div id="all-images">
+                {data &&
+                  data.map(
+                    (dataItem) => (
+                      <ResourceCards
+                        game={dataItem.game}
+                        description={dataItem.description}
+                        author={dataItem.author}
+                      />
+                    )
+                    // <tr key={data.id}>
+                    //     <td>{data.firstName} {data.lastName}</td>
+                    //     <td>{data.email}</td>
+                    //     <td>{user.role}</td>
+                    // </tr>
+                  )}
+              </div>
+
+              <div className="browse-box">
+                <h1 className="browse-title"> More Featured Games</h1>
+
+                <div id="all-images">
+                  {data &&
+                    data.map(
+                      (dataItem) => (
+                        <ResourceCards
+                          game={dataItem.game}
+                          description={dataItem.description}
+                          author={dataItem.author}
+                        />
+                      )
+                      // <tr key={data.id}>
+                      //     <td>{data.firstName} {data.lastName}</td>
+                      //     <td>{data.email}</td>
+                      //     <td>{user.role}</td>
+                      // </tr>
+                    )}
+                </div>
+
+                <Bottom />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
