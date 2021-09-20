@@ -104,7 +104,7 @@ function AboutPage(props) {
           {/* main div */}
           <HeroDiv>
             {/* big hero thing */}
-            About Page
+            Privacy Page
           </HeroDiv>
           <MainDiv>
             {/* About Page text */}
